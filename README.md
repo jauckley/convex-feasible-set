@@ -1,5 +1,5 @@
 # Convex Feasible Set Algorithm
-This is an implementation of the Convex Feasible Set Algorithm for Real Time Optimization in Motion Planning (Changliu et al. 2018) ([https://arxiv.org/abs/1709.00627](https://arxiv.org/abs/1709.00627)). My partner and I also extended the algorithm to generate optimized trajectories for multiple agents without collision.
+This is an implementation of the Convex Feasible Set Algorithm for Real Time Optimization in Motion Planning (Changliu et al. 2018) ([https://arxiv.org/abs/1709.00627](https://arxiv.org/abs/1709.00627)). My partner ([https://github.com/OmkarSavant](https://github.com/OmkarSavant)) and I also extended the algorithm to generate optimized trajectories for multiple agents without collision.
 
 Our 9-page report on the paper and the results of our extension is linked here ([https://drive.google.com/file/d/1wexU4hR-PBu9TNvZhhZmS1EmYTiT23oj/view?usp=sharing](https://drive.google.com/file/d/1wexU4hR-PBu9TNvZhhZmS1EmYTiT23oj/view?usp=sharing)), and I will give an overview of the algorithm in the following paragraph.
 
