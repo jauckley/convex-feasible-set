@@ -12,10 +12,17 @@ The Convex Feasible Set Algorithm is a fast algorithm for solving motion plannin
 This graphic from the paper visualizes this procedure quite well:
 ![alt text](https://github.com/jauckley/convex-feasible-set/blob/master/images/CFS_fig2_1.png)
 
+## Implementation
+
 In our implementation, we formulated the objective function as a quadratic function that penalizes the acceleration necessary to follow the given trajectory over a planning horizon. This resulted in smooth and short trajectories that completely avoided obstacles.
 
 The resulting trajectory for a given scenario can be seen here, where the grey boxes are obstacles, the thin colored lines are solutions of previous iterations, and the converged solution is shown in black:
 ![alt text](https://github.com/jauckley/convex-feasible-set/blob/master/images/cfs_classic.png)
+
+We compared the performance of our CFS implementation to the interior point method using Matlab's fmincon. We tested the two algorithms on two different planning scenarios- Scenario 1 being the setup shown above and Scenerio 2 being a simpler setup the one square obstacle in between the start and end point. The time taken to run the algorithms on differing number of time steps is shown in the following table:
+![alt text](https://github.com/jauckley/convex-feasible-set/blob/master/images/time_comparison.png)
+
+It can be seen from this table that the CFS algorithm performs much faster than the interior point method. Additionally, the trajectory created from running interior point method (even when it converged to a solution) was almost always visibly sub-optimal, in that its shape bends very far out of its way to avoid obstacles. It is clearly not suitable for the application of autonomous vehicles, while CFS generates trajectories that efficiently avoid obstacles.
 
 ## Multi Agent Extension
 
