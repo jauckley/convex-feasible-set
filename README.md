@@ -7,7 +7,7 @@ Our 9-page report on the paper and the results of our extension is linked here (
 
 ## The Algorithm
 
-The Convex Feasible Set Algorithm is a fast algorithm for solving motion planning problems with convex objective functions and non-convex constraints. It transforms the non-convex problem into a series of convex problems and solves them iteratively. It does so by finding convex feasible sets within the non-convex domain and solving them as convex optimization problems until convergence.
+The Convex Feasible Set Algorithm is a fast algorithm for solving motion planning problems with convex objective functions and non-convex constraints. It transforms the non-convex problem into a sequence of convex problems and solves them iteratively. It does so by finding convex feasible sets within the non-convex domain and solving them as convex optimization problems until convergence.
 
 This graphic from the paper visualizes this procedure quite well:
 ![alt text](https://github.com/jauckley/convex-feasible-set/blob/master/images/CFS_fig2_1.png)
